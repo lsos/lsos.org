@@ -1,81 +1,42 @@
-import React, { Attributes, FunctionComponent } from "react";
+import React, { FunctionComponent } from "react";
 import "./css/index.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import logoUrl from "./logo/lsos.svg";
+//import logoUrl from "./logo/lsos.svg";
 import { assert } from "@brillout/assert";
 
 export { page_config };
 export default page_config;
 
 type PageOptions = {
-  route?: string;
   bodyWidth?: number;
   noPageTitle?: boolean;
   hydrateReact?: boolean;
-  addInitialProps?: (
-    initialProps: InitialProps
-  ) => Promise<Record<string, any>>;
   headerAddendum?: JSX.Element;
   renderToDom?: boolean;
   renderToHtml?: boolean;
 };
 
-type TitleGetter = (initialProps: AddedInitialProps) => string;
+type TitleGetter = () => string;
 
 export type GoldpageDef = {
-  route: string;
-  view: (props: AddedInitialProps) => JSX.Element;
+  view: () => JSX.Element;
 
   title: string | TitleGetter;
   favicon: string;
 
-  renderToDom: boolean;
-  renderToHtml: boolean;
-  renderHtmlAtBuildTime: false;
-  hydrateReact: boolean;
-
-  addInitialProps?: (initialProps: InitialProps) => Promise<object>;
 };
-
-type InitialProps = {
-  headers: {
-    cookie: string;
-  };
-} & any;
-export type AddedInitialProps = Attributes & {
-  telefuncContext: never;
-} & any;
 
 function page_config(
   page_view: FunctionComponent | ((props: any) => JSX.Element),
   title: string | TitleGetter | null,
   {
-    route,
     bodyWidth,
     noPageTitle,
-    hydrateReact = false,
-    addInitialProps,
     headerAddendum,
-    renderToHtml = true,
-    renderToDom = true,
   }: PageOptions = {}
-): GoldpageDef {
-  const addInitialProps_enhanced = async (initialProps: InitialProps) => {
-    let addedProps;
-    if (!addInitialProps) {
-      addedProps = {};
-    } else {
-      addedProps = await addInitialProps(initialProps);
-    }
-    return addedProps;
-  };
-
-  if (!route) {
-    assert(title, { route, title });
-    assert(typeof title === "string", { route, title });
-    route = "/" + title.toLowerCase().split(" ").join("-");
-  }
+)/*: GoldpageDef*/
+{
 
   const pageTitle = title;
   assert(noPageTitle || pageTitle, { title, noPageTitle });
@@ -88,10 +49,10 @@ function page_config(
   }
   assert(docTitle, { title });
 
-  const view = (props: AddedInitialProps) => {
+  const view = () => {
     return (
       <>
-        <Header telefuncContext={null} />
+        <Header />
         {headerAddendum}
         <div id="page-content-container">
           <div
@@ -101,7 +62,7 @@ function page_config(
             }}
           >
             {noPageTitle ? null : <h1>{pageTitle}</h1>}
-            {React.createElement(page_view, props)}
+            {React.createElement(page_view)}
           </div>
         </div>
         <Footer />
@@ -109,22 +70,17 @@ function page_config(
     );
   };
 
-  return {
-    route,
-    view,
-
+  objectAssign(view, {
     title: docTitle,
-    favicon: logoUrl,
-
-    renderToDom,
-    renderToHtml,
-    renderHtmlAtBuildTime: false,
-    hydrateReact,
-
-    addInitialProps: addInitialProps_enhanced,
-  };
+    skipPageShell: true
+  })
+  return view
 }
 
-function isNodejs() {
-  return typeof window === "undefined";
+// Same as `Object.assign()` but with type inference
+function objectAssign<Obj extends unknown, ObjAddendum extends Record<string, unknown>>(
+  obj: Obj,
+  objAddendum: ObjAddendum
+): asserts obj is Obj & ObjAddendum {
+  Object.assign(obj, objAddendum)
 }
