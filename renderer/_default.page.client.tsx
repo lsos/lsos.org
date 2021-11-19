@@ -4,6 +4,7 @@ import { getPage } from 'vite-plugin-ssr/client'
 import { PageShell } from './PageShell'
 import type { PageContext } from './types'
 import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
+import { activateEmailLinks } from '../utils/activateEmailLinks'
 
 hydrate()
 
@@ -22,4 +23,6 @@ async function hydrate() {
   )
 
   ReactDOM.hydrate(pageElement, document.getElementById('page-view'))
+
+  activateEmailLinks({ domain_name: 'lsos.org' })
 }

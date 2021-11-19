@@ -7,8 +7,11 @@ function NotFound() {
   const joinUrl = "/join";
   return (
     <p>
-      Contact your Lsos manager, or go to{" "}
+      Contact your Lsos manager.
+    {/* Couldn't find where /join page is defined
+    , or go to{" "}
       <a href={joinUrl}>{"lsos.org" + joinUrl}</a> if you don't have one yet.
+      */}
     </p>
   );
 }
