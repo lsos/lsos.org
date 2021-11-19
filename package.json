@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "dev": "npm run server",
-    "prod": "npm run build && npm run server:prod",
-    "build": "vite build && vite build --ssr",
+    "dev": "yarn server",
+    "prod": "yarn build && yarn server:prod",
+    "build": "yarn build:clean && yarn build:vite && yarn build:prerender",
+    "build:clean": "rm -rf dist/",
+    "build:vite": "vite build && vite build --ssr",
+    "build:prerender": "vite-plugin-ssr prerender --noExtraDir",
     "server": "ts-node ./server",
     "server:prod": "cross-env NODE_ENV=production ts-node ./server"
   },
