@@ -1,8 +1,6 @@
 import ReactDOMServer from 'react-dom/server'
-import React from 'react'
-import { PageShell } from './PageShell'
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
-import logoUrl from './logo.svg'
+import logoUrl from '../pages/logo/lsos.svg'
 import type { PageContext } from './types'
 
 export { render }
@@ -12,13 +10,7 @@ export const passToClient = ['pageProps', 'urlPathname']
 async function render(pageContext: PageContext) {
   const { Page, pageProps } = pageContext
 
-  const pageElement = Page.skipPageShell ? (
-    Page(pageProps)
-  ) : (
-    <PageShell pageContext={pageContext}>
-      <Page {...pageProps} />
-    </PageShell>
-  )
+  const pageElement = Page(pageProps)
 
   const pageHtml = ReactDOMServer.renderToString(pageElement)
 

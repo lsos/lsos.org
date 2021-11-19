@@ -1,7 +1,5 @@
 import ReactDOM from 'react-dom'
-import React from 'react'
 import { getPage } from 'vite-plugin-ssr/client'
-import { PageShell } from './PageShell'
 import type { PageContext } from './types'
 import type { PageContextBuiltInClient } from 'vite-plugin-ssr/client'
 import { activateEmailLinks } from '../utils/activateEmailLinks'
@@ -14,13 +12,7 @@ async function hydrate() {
   const pageContext = await getPage<PageContextBuiltInClient & PageContext>()
   const { Page, pageProps } = pageContext
 
-  const pageElement = Page.skipPageShell ? (
-    Page(pageProps)
-  ) : (
-    <PageShell pageContext={pageContext}>
-      <Page {...pageProps} />
-    </PageShell>
-  )
+  const pageElement = Page(pageProps)
 
   ReactDOM.hydrate(pageElement, document.getElementById('page-view'))
 
