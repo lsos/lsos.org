@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
-import "./footer.css";
-import { discordLink, githubLink } from "../contact/contactLinks";
-import { Center } from "../../utils/Center";
+import React, { ReactNode } from 'react'
+import './footer.css'
+import { discordLink, githubLink } from '../contact/contactLinks'
+import { Center } from '../../utils/Center'
 
-export default Footer;
+export default Footer
 
 function Footer() {
   return (
@@ -23,7 +23,9 @@ function Footer() {
         <Link href={discordLink}>Discord</Link>
         <Link href={githubLink}>GitHub</Link>
         <Link href="/contact">Contact</Link>
+        {/*
         <Link href="/jobs">Jobs</Link>
+        */}
       </Section>
 
       <Section>
@@ -43,7 +45,7 @@ function Footer() {
         <Link href="/imprint">Imprint</Link>
       </Section>
     </Container>
-  );
+  )
 }
 
 function Container({ children }: { children: ReactNode }) {
@@ -52,11 +54,11 @@ function Container({ children }: { children: ReactNode }) {
       <div id="footer">{children}</div>
       <NoCookie />
     </div>
-  );
+  )
 }
 
 function Section({ children }: { children: ReactNode }) {
-  return <div className="footer_section">{children}</div>;
+  return <div className="footer_section">{children}</div>
 }
 
 function Header({ children }: { children: ReactNode }) {
@@ -64,12 +66,12 @@ function Header({ children }: { children: ReactNode }) {
     <h4
       style={{
         marginBottom: 7,
-        fontWeight: 600,
+        fontWeight: 600
       }}
     >
       {children}
     </h4>
-  );
+  )
 }
 
 function Link({ href, children }: { href: string; children: ReactNode }) {
@@ -77,22 +79,22 @@ function Link({ href, children }: { href: string; children: ReactNode }) {
     <a
       href={href}
       style={{
-        display: "block",
-        textDecoration: "none",
-        color: "inherit",
+        display: 'block',
+        textDecoration: 'none',
+        color: 'inherit'
       }}
     >
       {children}
     </a>
-  );
+  )
 }
 
 function NoCookie() {
   return (
     <Center style={{ marginTop: 36, marginBottom: -20 }}>
-      <a href="/min" style={{ fontSize: "0.85em" }}>
+      <a href="/min" style={{ fontSize: '0.85em' }}>
         No cookie. No JS.
       </a>
     </Center>
-  );
+  )
 }

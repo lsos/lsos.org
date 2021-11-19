@@ -4,7 +4,6 @@ import { page_config } from "./page_config";
 import { TermsOfService } from "@brillout/website-legals";
 
 export default page_config(Terms, "Terms of Service", {
-  route: "/terms",
   noPageTitle: true,
 });
 

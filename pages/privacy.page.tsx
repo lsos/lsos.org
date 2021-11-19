@@ -4,7 +4,6 @@ import { page_config } from "./page_config";
 import { PrivacyPolicy } from "@brillout/website-legals";
 
 export default page_config(Privacy, "Privacy Policy", {
-  route: "/privacy",
   noPageTitle: true,
 });
 

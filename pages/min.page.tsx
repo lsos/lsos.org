@@ -1,10 +1,7 @@
 import React from "react";
 import { page_config } from "./page_config";
 
-export default page_config(Min, "Minimum", {
-  route: "/min",
-  renderToDom: false,
-});
+export default page_config(Min, "Minimum");
 
 function Min() {
   return (
