@@ -1,0 +1,17 @@
+.js-block {
+  background-color: var(--color-gray);
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 13.6px;
+  padding: 16px;
+  margin: 6px 0;
+  overflow-x: auto;
+}
+.goldpage-indent-fix {
+  margin-top: -19px;
+  margin-left: -29px;
+  margin-bottom: 0px;
+}
+
+li {
+  margin: 16px 0;
+}

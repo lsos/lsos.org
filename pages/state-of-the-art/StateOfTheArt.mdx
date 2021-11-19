@@ -1,0 +1,138 @@
+import {Seperator, TableRef, ValueTable} from './value-components';
+import {ValueList} from '../values/ValueList';
+import './StateOfTheArt.css';
+
+<p>
+Common financial models and the Lsos.
+</p>
+
+<p>We evaluate models after these values:</p>
+
+<ValueList />
+
+<br/>
+
+<ValueTable
+  entries={[
+    {
+      modelName: <>Proprietary Software<Seperator/> Closed Source</>,
+      transparent: 0,
+      forkable: 0,
+      accessible: 0.45,
+      independent: 1,
+      sustainable: 1,
+    },
+    {
+      modelName: <>Proprietary Software<Seperator/> Public Source</>,
+      transparent: 1,
+      forkable: 0,
+      accessible: 0.45,
+      independent: 1,
+      sustainable: 1,
+    },
+    {
+      modelName: <>Open Source<Seperator/> Open Core</>,
+      transparent: 0.7,
+      forkable: 0.7,
+      accessible: 0.7,
+      independent: 1,
+      sustainable: 1,
+    },
+    {
+      modelName: <>Open Source<Seperator/> Dual Licensing</>,
+      transparent: 1,
+      forkable: 0.3,
+      accessible: 0.7,
+      independent: 1,
+      sustainable: 1,
+    },
+    {
+      modelName: <>Open Source<Seperator/> Company Backed</>,
+      transparent: 1,
+      forkable: 1,
+      accessible: 1,
+      independent: 0,
+      sustainable: 1,
+    },
+    {
+      modelName: <>Open Source<Seperator/> Donations</>,
+      transparent: 1,
+      forkable: 1,
+      accessible: 1,
+      independent: 1,
+      sustainable: 0.3,
+    },
+    {
+      modelName: <>Lsos</>,
+      transparent: 1,
+      forkable: 1,
+      accessible: 1,
+      independent: 1,
+      sustainable: 1,
+    },
+  ]}
+  skip_links={true}
+/>
+
+<br/>
+
+<TableRef>
+<>Proprietary | Closed Source</>
+<>
+closed sourced, not forkable, usually expensive.
+Photoshop, Windows, AutoCAD, etc.
+</>
+</TableRef>
+
+<TableRef>
+<>Proprietary | Public Source</>
+<>
+same, but the code is available to be read.
+Unreal Engine, for example,
+shares knowledge and benefits community patches
+by making its code public.
+</>
+</TableRef>
+
+<TableRef>
+<>Open Source | Open Core</>
+<>
+the code is open source but some extensions are proprietary.
+Such Software can in theory be as expensive as proprietary software but they are usually more accessible.
+Elasticsearch is a successful example of using the open core model to build a prosperous company.
+</>
+</TableRef>
+<TableRef>
+<>Open Source | Dual Licensing</>
+<>
+the code is available as a
+"community version" with a free but restrictive copyleft license,
+and as an "enterprise version" with a permissive but paid commercial license.
+For example, MongoDB's community version is
+AGPL-like licensed and prohibits running a SaaS,
+while the enterprise version allows running a SaaS but is very expensive.
+This is not particularly forkable: if MongoDB shuts down
+then the code is stuck with the restrictive license and
+nobody can take over.
+</>
+</TableRef>
+
+<TableRef>
+<>Open Source | Company Backed</>
+<>
+large companies are increasingly open sourcing their internal tools.
+These projects are open source and financed but not independent.
+React's development, for example, is entirely dependent on Facebook.
+</>
+</TableRef>
+
+<TableRef>
+<>Open Source | Donations</>
+<>
+some projects &mdash;
+due to their high exposure, high amount of users, and relatively low developing cost &mdash;
+can sustain solely on donations.
+Usually in web development, for example Webpack or Vue.
+For most projects donations are not enough.
+</>
+</TableRef>
