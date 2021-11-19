@@ -1,19 +1,12 @@
 import React from "react";
-import { Counter } from "./Counter";
+import Landing from "./Landing.mdx";
+import page_config from "../page_config";
+import { LandingHeader } from "./LandingHeader";
 
-export { Page };
-
-function Page() {
-  return (
-    <>
-      <h1>Welcome</h1>
-      This page is:
-      <ul>
-        <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <Counter />
-        </li>
-      </ul>
-    </>
-  );
-}
+export default page_config(Landing, null, {
+  route: "/",
+  noPageTitle: true,
+  headerAddendum: <LandingHeader />,
+  bodyWidth: 626,
+  renderToDom: false,
+});

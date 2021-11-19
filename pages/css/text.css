@@ -1,0 +1,106 @@
+/*
+ * Font
+ */
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/*
+ * Links
+ */
+a {
+  text-decoration: none;
+}
+
+/*
+ * Lists
+ */
+li {
+  margin-top: 2px;
+}
+
+ul.long-bullets li {
+  margin-top: 0.6em;
+}
+
+/*
+ * Line height
+ */
+html {
+  line-height: 1.5;
+}
+
+/*
+ * Bold
+ */
+.semibold {
+  font-weight: 500;
+}
+strong {
+  font-weight: 600;
+}
+
+/*
+ * Headers
+ */
+h1 {
+  font-size: 1.7em;
+  margin-bottom: 0.87em;
+  margin-top: 12.8px;
+}
+
+h2 {
+  font-size: 1.35em;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+  margin-bottom: var(--paragraph-margin);
+}
+
+h3 {
+  font-size: 1.17em;
+  margin-bottom: 1.4em;
+  margin-top: 45.76px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+h1 + h2,
+h1 + h3,
+h2 + h3,
+h3 + h4 {
+  margin-top: 0;
+}
+
+/* Spacing */
+
+:root {
+  --paragraph-margin: 16px;
+}
+
+p,
+.paragraph {
+  margin-top: var(--paragraph-margin);
+  margin-bottom: var(--paragraph-margin);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3.h3-faq {
+  margin-top: var(--paragraph-margin);
+  margin-bottom: 7px;
+}
+h3.h3-account {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.small-text {
+  opacity: 0.7;
+  font-size: 0.94em;
+}

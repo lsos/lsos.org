@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin: auto;
+}
+body {
+  --max-width: 800px;
+}
+#page-content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+

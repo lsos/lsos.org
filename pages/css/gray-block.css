@@ -1,0 +1,54 @@
+.gray-block {
+  /* Defaults */
+  --width: 1000px;
+  --padding: 60px;
+
+  /* Layout & Spacing */
+  padding: var(--padding);
+  padding-top: calc(var(--padding) - 11px);
+  max-width: 100%;
+  box-sizing: border-box;
+  width: calc(var(--width) + var(--padding));
+
+  /* Center */
+  margin: auto;
+
+  /* Style */
+  background-color: var(--color-gray-darker);
+  border-radius: 7px;
+  border: 1px solid var(--color-gray-border);
+}
+@media (max-width: 399px) {
+  .gray-block {
+    --padding: 30px;
+  }
+}
+
+.gray-block .inline-code {
+  background-color: #ddd;
+}
+
+.gray-block > :first-child,
+.gray-block > :first-child > :first-child,
+.gray-block > :first-child > :first-child > :first-child,
+.gray-block > :first-child > :first-child > :first-child > :first-child,
+.gray-block
+  > :first-child
+  > :first-child
+  > :first-child
+  > :first-child
+  > :first-child {
+  margin-top: 0 !important;
+}
+.gray-block > :last-child,
+.gray-block > :last-child > :last-child,
+.gray-block > :last-child > :last-child > :last-child,
+.gray-block > :last-child > :last-child > :last-child > :last-child,
+.gray-block
+  > :last-child
+  > :last-child
+  > :last-child
+  > :last-child
+  > :last-child {
+  margin-bottom: 0 !important;
+}

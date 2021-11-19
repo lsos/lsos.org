@@ -1,0 +1,29 @@
+.lsos-button {
+  /* Sizing */
+  height: 40px;
+  padding: 0 20px;
+  /* Color */
+  background-color: var(--color-green);
+  color: white;
+  /* Text */
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 600;
+  /* Misc */
+  border: 0;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lsos-button--secondary {
+  /* Sizing */
+  height: 35px;
+  padding: 0 15px;
+  /* Color */
+  background-color: transparent;
+  color: var(--color-black);
+  /* Border */
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+}

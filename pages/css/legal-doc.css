@@ -1,0 +1,11 @@
+.legal-doc {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  /*
+  fontWeight: lighter;
+  */
+}
+.legal-doc h1 {
+  margin-bottom: 27px;
+}
+
