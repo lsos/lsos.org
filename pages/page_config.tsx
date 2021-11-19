@@ -11,10 +11,7 @@ export default page_config;
 type PageOptions = {
   bodyWidth?: number;
   noPageTitle?: boolean;
-  hydrateReact?: boolean;
   headerAddendum?: JSX.Element;
-  renderToDom?: boolean;
-  renderToHtml?: boolean;
 };
 
 type TitleGetter = () => string;

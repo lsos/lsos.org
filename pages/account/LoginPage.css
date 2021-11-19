@@ -1,0 +1,5 @@
+@import "../css/form.css";
+
+#login-form {
+  --width: 314px;
+}
