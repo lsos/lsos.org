@@ -1,15 +1,15 @@
 {
   "renderer/_default.page.client.tsx": {
-    "file": "assets/renderer/_default.page.client.tsx.6234f7c0.js",
+    "file": "assets/renderer/_default.page.client.tsx.ae98fc5b.js",
     "src": "renderer/_default.page.client.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js"
+      "_vendor.74fa4180.js"
     ]
   },
-  "_vendor.4ff7423c.js": {
-    "file": "assets/vendor.4ff7423c.js",
+  "_vendor.74fa4180.js": {
+    "file": "assets/vendor.74fa4180.js",
     "dynamicImports": [
       "pages/min.page.tsx",
       "pages/privacy.page.tsx",
@@ -35,133 +35,139 @@
     ]
   },
   "pages/min.page.tsx": {
-    "file": "assets/min.page.ca36a245.js",
+    "file": "assets/min.page.2fbf3b16.js",
     "src": "pages/min.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js"
     ]
   },
-  "_page_config.2cbfe3eb.js": {
-    "file": "assets/page_config.2cbfe3eb.js",
+  "_page_config.1b3d6514.js": {
+    "file": "assets/page_config.1b3d6514.js",
     "imports": [
-      "_vendor.4ff7423c.js"
+      "_vendor.74fa4180.js"
     ],
     "css": [
-      "assets/page_config.f981ba3a.css"
+      "assets/page_config.519050bc.css"
     ],
     "assets": [
-      "assets/logo-with-text.84f3be5a.svg"
+      "assets/logo-with-text.84f3be5a.svg",
+      "assets/Inter-Regular.95243f24.woff2",
+      "assets/Inter-Medium.fb2229b3.woff2",
+      "assets/Inter-SemiBold.2ed3b36e.woff2",
+      "assets/Inter-Bold.ddbd40a8.woff2",
+      "assets/Inter-Italic.d48ec4fb.woff2",
+      "assets/Inter-SemiBoldItalic.05fa751f.woff2"
     ]
   },
   "pages/privacy.page.tsx": {
-    "file": "assets/privacy.page.662dca97.js",
+    "file": "assets/privacy.page.c31fa2fd.js",
     "src": "pages/privacy.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_index.module.5c7284bc.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_index.module.99b12379.js",
+      "_vendor.74fa4180.js"
     ]
   },
-  "_index.module.5c7284bc.js": {
-    "file": "assets/index.module.5c7284bc.js",
+  "_index.module.99b12379.js": {
+    "file": "assets/index.module.99b12379.js",
     "imports": [
-      "_vendor.4ff7423c.js"
+      "_vendor.74fa4180.js"
     ]
   },
   "pages/terms.page.tsx": {
-    "file": "assets/terms.page.99e172b7.js",
+    "file": "assets/terms.page.c9ed8e04.js",
     "src": "pages/terms.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_index.module.5c7284bc.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_index.module.99b12379.js",
+      "_vendor.74fa4180.js"
     ]
   },
   "pages/404/_error.page.tsx": {
-    "file": "assets/_error.page.be0f4f08.js",
+    "file": "assets/_error.page.282eb898.js",
     "src": "pages/404/_error.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js"
     ]
   },
   "pages/about/index.page.ts": {
-    "file": "assets/index.page.489de349.js",
+    "file": "assets/index.page.74f4b653.js",
     "src": "pages/about/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
-  "_esm.f9af9176.js": {
-    "file": "assets/esm.f9af9176.js",
+  "_esm.5c28839c.js": {
+    "file": "assets/esm.5c28839c.js",
     "imports": [
-      "_vendor.4ff7423c.js"
+      "_vendor.74fa4180.js"
     ]
   },
   "pages/account/index.page.tsx": {
-    "file": "assets/index.page.7017cacd.js",
+    "file": "assets/index.page.90084f17.js",
     "src": "pages/account/index.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js",
-      "_P.38f921b9.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js",
+      "_P.c4911375.js"
     ],
     "css": [
       "assets/index.page.68ad483e.css"
     ]
   },
-  "_P.38f921b9.js": {
-    "file": "assets/P.38f921b9.js",
+  "_P.c4911375.js": {
+    "file": "assets/P.c4911375.js",
     "imports": [
-      "_page_config.2cbfe3eb.js"
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/conduct/index.page.ts": {
-    "file": "assets/index.page.6150ff81.js",
+    "file": "assets/index.page.22f9b288.js",
     "src": "pages/conduct/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/contact/index.page.ts": {
-    "file": "assets/index.page.1cd0fd73.js",
+    "file": "assets/index.page.a446b84b.js",
     "src": "pages/contact/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js"
     ]
   },
   "pages/culture/index.page.ts": {
-    "file": "assets/index.page.3f1c1548.js",
+    "file": "assets/index.page.abe1be8b.js",
     "src": "pages/culture/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/faq/index.page.tsx": {
-    "file": "assets/index.page.c80e5a2d.js",
+    "file": "assets/index.page.1e24a684.js",
     "src": "pages/faq/index.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js",
-      "_P.38f921b9.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js",
+      "_P.c4911375.js"
     ],
     "assets": [
       "assets/activation-form.de5fc139.png",
@@ -170,108 +176,108 @@
     ]
   },
   "pages/imprint/index.page.ts": {
-    "file": "assets/index.page.7a238d52.js",
+    "file": "assets/index.page.efe552ab.js",
     "src": "pages/imprint/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/index/index.page.tsx": {
-    "file": "assets/index.page.33316e42.js",
+    "file": "assets/index.page.46af5244.js",
     "src": "pages/index/index.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/jobs/index.page.ts": {
-    "file": "assets/index.page.b02cdb22.js",
+    "file": "assets/index.page.5ccaff6b.js",
     "src": "pages/jobs/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/labels/index.page.tsx": {
-    "file": "assets/index.page.51f16da2.js",
+    "file": "assets/index.page.583132b8.js",
     "src": "pages/labels/index.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js"
     ]
   },
   "pages/logo/index.page.tsx": {
-    "file": "assets/index.page.a9c78d5a.js",
+    "file": "assets/index.page.870578ed.js",
     "src": "pages/logo/index.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js"
     ],
     "assets": [
       "assets/lsos.506983f2.svg"
     ]
   },
   "pages/mission/index.page.ts": {
-    "file": "assets/index.page.ffd7ea5e.js",
+    "file": "assets/index.page.9e0b7458.js",
     "src": "pages/mission/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/start/index.page.ts": {
-    "file": "assets/index.page.18c56c0f.js",
+    "file": "assets/index.page.b416706a.js",
     "src": "pages/start/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_page_config.2cbfe3eb.js",
-      "_vendor.4ff7423c.js",
-      "_P.38f921b9.js"
+      "_page_config.1b3d6514.js",
+      "_vendor.74fa4180.js",
+      "_P.c4911375.js"
     ],
     "css": [
       "assets/index.page.9b23ff80.css"
     ]
   },
   "pages/state-of-the-art/index.page.ts": {
-    "file": "assets/index.page.b4a778a3.js",
+    "file": "assets/index.page.c5d5cab7.js",
     "src": "pages/state-of-the-art/index.page.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_page_config.2cbfe3eb.js",
-      "_ValueList.f445e140.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_page_config.1b3d6514.js",
+      "_ValueList.d9f5fb05.js"
     ],
     "css": [
       "assets/index.page.c717338d.css"
     ]
   },
-  "_ValueList.f445e140.js": {
-    "file": "assets/ValueList.f445e140.js",
+  "_ValueList.d9f5fb05.js": {
+    "file": "assets/ValueList.d9f5fb05.js",
     "imports": [
-      "_page_config.2cbfe3eb.js"
+      "_page_config.1b3d6514.js"
     ]
   },
   "pages/values/index.page.tsx": {
-    "file": "assets/index.page.18b24c5b.js",
+    "file": "assets/index.page.a7a57367.js",
     "src": "pages/values/index.page.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_vendor.4ff7423c.js",
-      "_esm.f9af9176.js",
-      "_ValueList.f445e140.js",
-      "_page_config.2cbfe3eb.js"
+      "_vendor.74fa4180.js",
+      "_esm.5c28839c.js",
+      "_ValueList.d9f5fb05.js",
+      "_page_config.1b3d6514.js"
     ]
   },
   "renderer/_default.page.server.tsx": {

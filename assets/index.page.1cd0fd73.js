@@ -1,1 +1,0 @@
-import{j as a,F as r,a as e,d as n,p as s}from"./page_config.2cbfe3eb.js";import"./vendor.4ff7423c.js";function c(){return a(r,{children:[a("div",{children:["Email: ",e("a",{className:"contact-address"})]}),a("div",{children:["Chat: ",e("a",{href:n,children:n})]})]})}var t=s(c,"Contact");export{t as default};
