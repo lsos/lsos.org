@@ -26,6 +26,7 @@
     "vite-plugin-ssr": "^0.3.31",
 
     "lsos": "^0.1.1",
+    "inter-ui": "^3.15.0",
     "@types/prismjs": "^1.16.2",
     "prismjs": "^1.22.0",
     "@brillout/website-legals": "^0.0.7",

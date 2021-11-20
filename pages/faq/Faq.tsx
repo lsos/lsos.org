@@ -1,3 +1,4 @@
+import React from 'react'
 import { FaqContent, FaqHeader, FaqQuestion } from "./FaqView";
 import activationFormScreenshot from "./activation-form.png";
 import libScreenshot from "./lib.png";
