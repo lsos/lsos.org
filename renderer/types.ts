@@ -3,7 +3,6 @@ export type PageProps = {}
 
 type Meta = {
   title?: string
-  skipPageShell?: true
 }
 
 type Page = (pageProps: PageProps) => React.ReactElement

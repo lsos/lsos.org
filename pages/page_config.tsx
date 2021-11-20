@@ -1,50 +1,44 @@
-import React, { FunctionComponent } from "react";
-import "./css/index.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import React, { FunctionComponent } from 'react'
+import './css/index.css'
+import Header from './Header'
+import Footer from './Footer'
 //import logoUrl from "./logo/lsos.svg";
-import { assert } from "@brillout/assert";
+import { assert } from '@brillout/assert'
 
-export { page_config };
-export default page_config;
+export { page_config }
+export default page_config
 
 type PageOptions = {
-  bodyWidth?: number;
-  noPageTitle?: boolean;
-  headerAddendum?: JSX.Element;
-};
+  bodyWidth?: number
+  noPageTitle?: boolean
+  headerAddendum?: JSX.Element
+}
 
-type TitleGetter = () => string;
+type TitleGetter = () => string
 
 export type GoldpageDef = {
-  view: () => JSX.Element;
+  view: () => JSX.Element
 
-  title: string | TitleGetter;
-  favicon: string;
-
-};
+  title: string | TitleGetter
+  favicon: string
+}
 
 function page_config(
   page_view: FunctionComponent | ((props: any) => JSX.Element),
   title: string | TitleGetter | null,
-  {
-    bodyWidth,
-    noPageTitle,
-    headerAddendum,
-  }: PageOptions = {}
-)/*: GoldpageDef*/
-{
+  { bodyWidth, noPageTitle, headerAddendum }: PageOptions = {}
+) {
+  /*: GoldpageDef*/
+  const pageTitle = title
+  assert(noPageTitle || pageTitle, { title, noPageTitle })
 
-  const pageTitle = title;
-  assert(noPageTitle || pageTitle, { title, noPageTitle });
-
-  let docTitle: string | TitleGetter;
+  let docTitle: string | TitleGetter
   if (!title) {
-    docTitle = "Lsos";
+    docTitle = 'Lsos'
   } else {
-    docTitle = title;
+    docTitle = title
   }
-  assert(docTitle, { title });
+  assert(docTitle, { title })
 
   const view = () => {
     return (
@@ -55,7 +49,7 @@ function page_config(
           <div
             id="page-content"
             style={{
-              maxWidth: bodyWidth,
+              maxWidth: bodyWidth
             }}
           >
             {noPageTitle ? null : <h1>{pageTitle}</h1>}
@@ -64,12 +58,11 @@ function page_config(
         </div>
         <Footer />
       </>
-    );
-  };
+    )
+  }
 
   objectAssign(view, {
-    title: docTitle,
-    skipPageShell: true
+    title: docTitle
   })
   return view
 }
