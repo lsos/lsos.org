@@ -1,1 +1,0 @@
-import{p as r,a as e,F as i}from"./page_config.1b3d6514.js";import"./vendor.74fa4180.js";var o="/assets/lsos.506983f2.svg",l=r(s,"Logo");function s(){return e(i,{children:[20,32,64,128,248].reverse().map(a=>e("div",{style:{display:"inline-block",margin:30,verticalAlign:"middle"},children:e("img",{src:o,height:a})},a))})}export{l as default};
