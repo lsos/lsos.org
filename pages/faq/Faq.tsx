@@ -16,7 +16,6 @@ function Faq() {
     <>
       <Section>Lsos project users</Section>
       <FaqHeader questions={questionsForUsers} />
-
       <Section>Open source developers</Section>
       <FaqHeader questions={questionsForDevs} />
 
@@ -355,7 +354,7 @@ function lib() {
           console, and if the company persists in not getting an activation key
           then the library throws an error that blocks the usage of your code.
         </p>
-        <p>
+        <P>
           An activation key is not required if:
           <ol>
             <li>your user's Git repository is public, or</li>
@@ -371,7 +370,7 @@ function lib() {
           <code className="inline-code">1.</code> means that anyone can develop
           and contribute to your project without any additional friction, just
           like before.
-        </p>
+        </P>
         <p>
           Companies get an activation key by filling a short online formular.
           Small companies and nonprofits get a free activation key while larger
